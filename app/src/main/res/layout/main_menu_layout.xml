@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+
+    android:id="@+id/main_menu_container"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="#80000000"
+    >
+
+    <!-- Power Off -->
+    <ImageView
+        android:id="@+id/button_power_off"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Power Off"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_lock_power_off" />
+
+    <!-- Restart -->
+    <ImageView
+        android:id="@+id/button_restart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Restart"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <!-- Volume Up -->
+    <ImageView
+        android:id="@+id/button_volume_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Volume Up"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_input_add" />
+
+    <!-- Mute -->
+    <ImageView
+        android:id="@+id/button_mute"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Mute"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_lock_silent_mode" />
+
+    <!-- Volume Down -->
+    <ImageView
+        android:id="@+id/button_volume_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Volume Down"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_media_previous" />
+
+    <!-- Screen Lock -->
+    <ImageView
+        android:id="@+id/button_lock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Lock Screen"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_lock_lock" />
 
 </RelativeLayout>

@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         if (isAccessibilityServiceEnabled()) {
             Log.d(TAG, "Accessibility Service has been enabled by the user.")
             Toast.makeText(this, "All permissions granted! Service starting.", Toast.LENGTH_SHORT).show()
-            // TODO: Start the floating service
+            startService(Intent(this, FloatingService::class.java))
         } else {
             handlePermissionDenied("Accessibility Service")
         }
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 checkOverlayPermission()
             } else {
                 Log.d(TAG, "Switch OFF. Stopping service.")
-                // TODO: Add code here to stop the service
+                stopService(Intent(this, FloatingService::class.java))
             }
         }
     }
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         if (isAccessibilityServiceEnabled()) {
             Log.d(TAG, "Accessibility Service is already enabled.")
             Toast.makeText(this, "All permissions present. Service starting.", Toast.LENGTH_SHORT).show()
-            // TODO: Start the floating service
+            startService(Intent(this, FloatingService::class.java))
         } else {
             Log.d(TAG, "Accessibility Service not enabled. Requesting it.")
             requestAccessibilityPermission()
