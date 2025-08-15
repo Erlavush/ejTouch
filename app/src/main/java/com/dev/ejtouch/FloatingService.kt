@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Service
 import android.content.Intent
 import android.graphics.PixelFormat
+import android.media.AudioManager
 import android.os.IBinder
 import android.util.TypedValue
 import android.view.*
@@ -21,13 +22,10 @@ class FloatingService : Service() {
 
     private var isMenuVisible = false
 
-    // THIS IS THE MISSING FUNCTION THAT WE ARE ADDING BACK
     override fun onBind(intent: Intent?): IBinder? {
-        // We don't need to bind to this service, so we return null
         return null
     }
 
-    // Function to convert DP to Pixels
     private fun dpToPx(dp: Int): Int {
         return TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP,
@@ -40,7 +38,6 @@ class FloatingService : Service() {
     override fun onCreate() {
         super.onCreate()
 
-        // --- Setup for the main floating icon (Bubble) ---
         floatingView = LayoutInflater.from(this).inflate(R.layout.floating_layout, null)
         windowManager = getSystemService(WINDOW_SERVICE) as WindowManager
 
@@ -56,7 +53,6 @@ class FloatingService : Service() {
         params.y = 100
         windowManager.addView(floatingView, params)
 
-        // --- Setup for the Main Menu ---
         mainMenuView = LayoutInflater.from(this).inflate(R.layout.main_menu_layout, null)
         menuParams = WindowManager.LayoutParams(
             dpToPx(200),
@@ -65,8 +61,8 @@ class FloatingService : Service() {
             WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
             PixelFormat.TRANSLUCENT
         )
+        menuParams.gravity = Gravity.CENTER
 
-        // --- Touch Listener for the Bubble ---
         val floatingIcon = floatingView.findViewById<ImageView>(R.id.floating_icon_image)
         floatingIcon.setOnTouchListener(object : View.OnTouchListener {
             private var initialX: Int = 0
@@ -115,25 +111,42 @@ class FloatingService : Service() {
         })
 
         mainMenuView.findViewById<View>(R.id.main_menu_container).setOnClickListener {
-            val buttonLock = mainMenuView.findViewById<ImageView>(R.id.button_lock)
-            val buttonPowerOff = mainMenuView.findViewById<ImageView>(R.id.button_power_off)
-            val buttonRestart = mainMenuView.findViewById<ImageView>(R.id.button_restart)
+            // This prevents clicks on the background from going to apps behind it.
+        }
 
-            buttonLock.setOnClickListener {
-                sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_LOCK_SCREEN)
-                hideMainMenu()
-            }
+        // --- Click Listeners for ALL Main Menu Buttons ---
+        val buttonLock = mainMenuView.findViewById<ImageView>(R.id.button_lock)
+        val buttonPowerOff = mainMenuView.findViewById<ImageView>(R.id.button_power_off)
+        val buttonRestart = mainMenuView.findViewById<ImageView>(R.id.button_restart)
+        // NEWLY ADDED
+        val buttonVolumeUp = mainMenuView.findViewById<ImageView>(R.id.button_volume_up)
+        val buttonVolumeDown = mainMenuView.findViewById<ImageView>(R.id.button_volume_down)
+        val buttonMute = mainMenuView.findViewById<ImageView>(R.id.button_mute)
 
-            buttonPowerOff.setOnClickListener {
-                sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_POWER_DIALOG)
-                hideMainMenu()
-            }
+        // Existing Listeners
+        buttonLock.setOnClickListener {
+            sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_LOCK_SCREEN)
+            hideMainMenu()
+        }
+        buttonPowerOff.setOnClickListener {
+            sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_POWER_DIALOG)
+            hideMainMenu()
+        }
+        buttonRestart.setOnClickListener {
+            sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_POWER_DIALOG)
+            hideMainMenu()
+        }
 
-            buttonRestart.setOnClickListener {
-                // Change the action to open the power dialog instead
-                sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_POWER_DIALOG)
-                hideMainMenu()
-            }
+        // NEW LISTENERS FOR VOLUME
+        buttonVolumeUp.setOnClickListener {
+            volumeUp()
+        }
+        buttonVolumeDown.setOnClickListener {
+            volumeDown()
+        }
+        buttonMute.setOnClickListener {
+            toggleMute()
+            hideMainMenu()
         }
     }
 
@@ -147,12 +160,8 @@ class FloatingService : Service() {
 
     private fun showMainMenu() {
         try {
-            val bubbleWidth = floatingView.width
-            val bubbleHeight = floatingView.height
-
-            menuParams.x = params.x - (dpToPx(200) / 2) + (bubbleWidth / 2)
-            menuParams.y = params.y - (dpToPx(200) / 2) + (bubbleHeight / 2)
-
+            menuParams.x = 0
+            menuParams.y = 0
             windowManager.addView(mainMenuView, menuParams)
             isMenuVisible = true
         } catch (e: Exception) {
@@ -171,17 +180,37 @@ class FloatingService : Service() {
         }
     }
 
+    private fun sendActionToAccessibilityService(action: String) {
+        val intent = Intent(this, ejTouchAccessibilityService::class.java)
+        intent.action = action
+        startService(intent)
+    }
+
+    // --- NEW HELPER FUNCTIONS FOR VOLUME ---
+    private fun volumeUp() {
+        val audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
+        // Adjust both media and ringtone volume, like physical buttons do
+        audioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_RAISE, AudioManager.FLAG_SHOW_UI)
+        audioManager.adjustStreamVolume(AudioManager.STREAM_RING, AudioManager.ADJUST_RAISE, 0)
+    }
+
+    private fun volumeDown() {
+        val audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
+        audioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_LOWER, AudioManager.FLAG_SHOW_UI)
+        audioManager.adjustStreamVolume(AudioManager.STREAM_RING, AudioManager.ADJUST_LOWER, 0)
+    }
+
+    private fun toggleMute() {
+        val audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
+        audioManager.adjustStreamVolume(AudioManager.STREAM_RING, AudioManager.ADJUST_TOGGLE_MUTE, 0)
+    }
+
+
     override fun onDestroy() {
         super.onDestroy()
         hideMainMenu()
         if (::floatingView.isInitialized) {
             windowManager.removeView(floatingView)
         }
-    }
-
-    private fun sendActionToAccessibilityService(action: String) {
-        val intent = Intent(this, ejTouchAccessibilityService::class.java)
-        intent.action = action
-        startService(intent)
     }
 }

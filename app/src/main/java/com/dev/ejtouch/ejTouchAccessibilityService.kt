@@ -12,6 +12,7 @@ class ejTouchAccessibilityService : AccessibilityService() {
         const val ACTION_LOCK_SCREEN = "ACTION_LOCK_SCREEN"
         const val ACTION_POWER_DIALOG = "ACTION_POWER_DIALOG"
         const val ACTION_RESTART = "ACTION_RESTART" // Note: Restart can be unreliable
+
     }
 
     private val TAG = "ejTouchService"
