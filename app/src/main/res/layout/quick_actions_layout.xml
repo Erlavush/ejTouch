@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main_menu_container"
+    android:id="@+id/quick_actions_container"
     android:layout_width="200dp"
     android:layout_height="200dp"
     android:background="@drawable/menu_background">
 
-    <!-- Power Off -->
+    <!-- Screenshot -->
     <ImageView
-        android:id="@+id/button_power_off"
+        android:id="@+id/button_screenshot"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Power Off"
+        android:contentDescription="Screenshot"
         android:padding="8dp"
-        android:src="@android:drawable/ic_lock_power_off" />
+        android:src="@android:drawable/ic_menu_camera" />
 
-    <!-- Restart -->
+    <!-- Flashlight -->
     <ImageView
-        android:id="@+id/button_restart"
+        android:id="@+id/button_flashlight"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="15dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Restart"
+        android:contentDescription="Flashlight"
         android:padding="8dp"
-        android:src="@android:drawable/ic_menu_revert" />
+        android:src="@android:drawable/ic_menu_search" /> <!-- Placeholder icon -->
 
-    <!-- Volume Up -->
+    <!-- WiFi -->
     <ImageView
-        android:id="@+id/button_volume_up"
+        android:id="@+id/button_wifi"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -40,13 +40,13 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="35dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Volume Up"
+        android:contentDescription="WiFi Settings"
         android:padding="8dp"
-        android:src="@android:drawable/ic_input_add" />
+        android:src="@android:drawable/ic_menu_send" /> <!-- Placeholder icon -->
 
-    <!-- Volume Down -->
+    <!-- Bluetooth -->
     <ImageView
-        android:id="@+id/button_volume_down"
+        android:id="@+id/button_bluetooth"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
@@ -54,33 +54,33 @@
         android:layout_marginStart="15dp"
         android:layout_marginBottom="35dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Volume Down"
+        android:contentDescription="Bluetooth Settings"
         android:padding="8dp"
-        android:src="@android:drawable/ic_media_previous" />
+        android:src="@android:drawable/ic_menu_share" /> <!-- Placeholder icon -->
 
-    <!-- Screen Lock -->
+    <!-- Brightness -->
     <ImageView
-        android:id="@+id/button_lock"
+        android:id="@+id/button_brightness"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_marginTop="35dp"
         android:layout_marginStart="15dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Lock Screen"
+        android:contentDescription="Brightness"
         android:padding="8dp"
-        android:src="@android:drawable/ic_lock_lock" />
+        android:src="@android:drawable/ic_menu_view" /> <!-- Placeholder icon -->
 
-    <!-- NEW: Quick Actions Button (replaces Mute's position) -->
+    <!-- NEW: Back Button -->
     <ImageView
-        android:id="@+id/button_quick_actions"
+        android:id="@+id/button_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Open Quick Actions"
+        android:contentDescription="Back to Main Menu"
         android:padding="8dp"
-        android:src="@android:drawable/ic_menu_manage" />
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
 </RelativeLayout>

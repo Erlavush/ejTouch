@@ -12,7 +12,7 @@ class ejTouchAccessibilityService : AccessibilityService() {
         const val ACTION_LOCK_SCREEN = "ACTION_LOCK_SCREEN"
         const val ACTION_POWER_DIALOG = "ACTION_POWER_DIALOG"
         const val ACTION_RESTART = "ACTION_RESTART" // Note: Restart can be unreliable
-
+        const val ACTION_SCREENSHOT = "ACTION_SCREENSHOT"
     }
 
     private val TAG = "ejTouchService"
@@ -22,7 +22,7 @@ class ejTouchAccessibilityService : AccessibilityService() {
         when (intent?.action) {
             ACTION_LOCK_SCREEN -> performGlobalAction(GLOBAL_ACTION_LOCK_SCREEN)
             ACTION_POWER_DIALOG -> performGlobalAction(GLOBAL_ACTION_POWER_DIALOG)
-
+            ACTION_SCREENSHOT -> performGlobalAction(GLOBAL_ACTION_TAKE_SCREENSHOT)
             // We will add more actions here later
         }
         return super.onStartCommand(intent, flags, startId)

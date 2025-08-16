@@ -1,0 +1,1470 @@
+================================================================================
+ANDROID PROJECT CODEBASE EXPORT
+================================================================================
+Project Name: ejTouch
+Export Date: 2025-08-16 23:05:48
+Root Directory: C:\ErlavushGitHubFiles\ejTouch
+================================================================================
+
+PROJECT STRUCTURE
+----------------------------------------
+ejTouch/
+├── .git
+│   ├── hooks
+│   ├── info
+│   ├── logs
+│   │   ├── refs
+│   │   │   ├── heads
+│   │   │   └── remotes
+│   │   │       └── origin
+│   ├── objects
+│   │   ├── 03
+│   │   ├── 04
+│   │   ├── 06
+│   │   ├── 07
+│   │   ├── 08
+│   │   ├── 0a
+│   │   ├── 0d
+│   │   ├── 0e
+│   │   ├── 10
+│   │   ├── 12
+│   │   ├── 16
+│   │   ├── 19
+│   │   ├── 1b
+│   │   ├── 1e
+│   │   ├── 1f
+│   │   ├── 20
+│   │   ├── 21
+│   │   ├── 24
+│   │   ├── 26
+│   │   ├── 28
+│   │   ├── 29
+│   │   ├── 2a
+│   │   ├── 2b
+│   │   ├── 2c
+│   │   ├── 2e
+│   │   ├── 2f
+│   │   ├── 30
+│   │   ├── 33
+│   │   ├── 34
+│   │   ├── 36
+│   │   ├── 38
+│   │   ├── 3a
+│   │   ├── 3b
+│   │   ├── 3e
+│   │   ├── 3f
+│   │   ├── 41
+│   │   ├── 42
+│   │   ├── 43
+│   │   ├── 44
+│   │   ├── 46
+│   │   ├── 47
+│   │   ├── 48
+│   │   ├── 4a
+│   │   ├── 4d
+│   │   ├── 4e
+│   │   ├── 4f
+│   │   ├── 50
+│   │   ├── 51
+│   │   ├── 55
+│   │   ├── 56
+│   │   ├── 57
+│   │   ├── 59
+│   │   ├── 5b
+│   │   ├── 5c
+│   │   ├── 62
+│   │   ├── 63
+│   │   ├── 66
+│   │   ├── 69
+│   │   ├── 6a
+│   │   ├── 6f
+│   │   ├── 72
+│   │   ├── 73
+│   │   ├── 74
+│   │   ├── 75
+│   │   ├── 78
+│   │   ├── 7b
+│   │   ├── 7c
+│   │   ├── 7e
+│   │   ├── 80
+│   │   ├── 81
+│   │   ├── 84
+│   │   ├── 87
+│   │   ├── 89
+│   │   ├── 91
+│   │   ├── 92
+│   │   ├── 94
+│   │   ├── 95
+│   │   ├── 98
+│   │   ├── 99
+│   │   ├── 9a
+│   │   ├── 9b
+│   │   ├── 9e
+│   │   ├── 9f
+│   │   ├── a3
+│   │   ├── a5
+│   │   ├── a6
+│   │   ├── a7
+│   │   ├── a8
+│   │   ├── aa
+│   │   ├── ad
+│   │   ├── ae
+│   │   ├── b2
+│   │   ├── b6
+│   │   ├── b7
+│   │   ├── b8
+│   │   ├── b9
+│   │   ├── bc
+│   │   ├── c0
+│   │   ├── c1
+│   │   ├── c2
+│   │   ├── c3
+│   │   ├── c5
+│   │   ├── c8
+│   │   ├── cd
+│   │   ├── cf
+│   │   ├── d1
+│   │   ├── d2
+│   │   ├── d3
+│   │   ├── d4
+│   │   ├── d5
+│   │   ├── d6
+│   │   ├── d8
+│   │   ├── da
+│   │   ├── dd
+│   │   ├── de
+│   │   ├── df
+│   │   ├── e3
+│   │   ├── e6
+│   │   ├── e7
+│   │   ├── e8
+│   │   ├── eb
+│   │   ├── ec
+│   │   ├── f1
+│   │   ├── f6
+│   │   ├── f7
+│   │   ├── f8
+│   │   ├── f9
+│   │   ├── fc
+│   │   ├── ff
+│   │   ├── info
+│   │   └── pack
+│   ├── refs
+│   │   ├── heads
+│   │   ├── remotes
+│   │   │   └── origin
+│   │   └── tags
+├── .kotlin
+│   ├── errors
+│   └── sessions
+├── app
+│   ├── src
+│   │   ├── androidTest
+│   │   │   └── java
+│   │   │       └── com
+│   │   │           └── dev
+│   │   │               └── ejtouch
+│   │   │                   └── ExampleInstrumentedTest.kt
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   │       └── dev
+│   │   │   │           └── ejtouch
+│   │   │   │               ├── ejTouchAccessibilityService.kt
+│   │   │   │               ├── FloatingService.kt
+│   │   │   │               └── MainActivity.kt
+│   │   │   ├── res
+│   │   │   │   ├── drawable
+│   │   │   │   │   ├── ic_launcher_background.xml
+│   │   │   │   │   ├── ic_launcher_foreground.xml
+│   │   │   │   │   └── menu_background.xml
+│   │   │   │   ├── layout
+│   │   │   │   │   ├── activity_main.xml
+│   │   │   │   │   ├── floating_layout.xml
+│   │   │   │   │   ├── main_menu_layout.xml
+│   │   │   │   │   └── quick_actions_layout.xml
+│   │   │   │   ├── mipmap-anydpi
+│   │   │   │   │   ├── ic_launcher.xml
+│   │   │   │   │   └── ic_launcher_round.xml
+│   │   │   │   ├── mipmap-hdpi
+│   │   │   │   ├── mipmap-mdpi
+│   │   │   │   ├── mipmap-xhdpi
+│   │   │   │   ├── mipmap-xxhdpi
+│   │   │   │   ├── mipmap-xxxhdpi
+│   │   │   │   ├── values
+│   │   │   │   │   ├── colors.xml
+│   │   │   │   │   ├── strings.xml
+│   │   │   │   │   └── themes.xml
+│   │   │   │   ├── values-night
+│   │   │   │   │   └── themes.xml
+│   │   │   │   └── xml
+│   │   │   │       ├── accessibility_service_config.xml
+│   │   │   │       ├── backup_rules.xml
+│   │   │   │       └── data_extraction_rules.xml
+│   │   │   └── AndroidManifest.xml
+│   │   └── test
+│   │       └── java
+│   │           └── com
+│   │               └── dev
+│   │                   └── ejtouch
+│   │                       └── ExampleUnitTest.kt
+│   └── proguard-rules.pro
+├── gradle
+│   ├── wrapper
+│   │   └── gradle-wrapper.properties
+├── gradle.properties
+├── local.properties
+├── README.md
+
+
+FILE CONTENTS
+----------------------------------------
+
+============================================================
+FILE: app\proguard-rules.pro
+============================================================
+# Add project specific ProGuard rules here.
+# You can control the set of applied configuration files using the
+# proguardFiles setting in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+# Uncomment this to preserve the line number information for
+# debugging stack traces.
+#-keepattributes SourceFile,LineNumberTable
+
+# If you keep the line number information, uncomment this to
+# hide the original source file name.
+#-renamesourcefileattribute SourceFile
+
+============================================================
+FILE: app\src\androidTest\java\com\dev\ejtouch\ExampleInstrumentedTest.kt
+============================================================
+package com.dev.ejtouch
+
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.ext.junit.runners.AndroidJUnit4
+
+import org.junit.Test
+import org.junit.runner.RunWith
+
+import org.junit.Assert.*
+
+/**
+ * Instrumented test, which will execute on an Android device.
+ *
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+@RunWith(AndroidJUnit4::class)
+class ExampleInstrumentedTest {
+    @Test
+    fun useAppContext() {
+        // Context of the app under test.
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        assertEquals("com.dev.ejtouch", appContext.packageName)
+    }
+}
+
+============================================================
+FILE: app\src\main\AndroidManifest.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EjTouch"
+        tools:targetApi="31">
+        <service
+            android:name=".FloatingService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".ejTouchAccessibilityService"
+            android:exported="false"
+            android:label="ejTouch Service"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+============================================================
+FILE: app\src\main\java\com\dev\ejtouch\ejTouchAccessibilityService.kt
+============================================================
+package com.dev.ejtouch
+
+import android.accessibilityservice.AccessibilityService
+import android.content.Intent
+import android.util.Log
+import android.view.accessibility.AccessibilityEvent
+
+class ejTouchAccessibilityService : AccessibilityService() {
+
+    companion object {
+        // We create a companion object to hold action constants
+        const val ACTION_LOCK_SCREEN = "ACTION_LOCK_SCREEN"
+        const val ACTION_POWER_DIALOG = "ACTION_POWER_DIALOG"
+        const val ACTION_RESTART = "ACTION_RESTART" // Note: Restart can be unreliable
+        const val ACTION_SCREENSHOT = "ACTION_SCREENSHOT"
+    }
+
+    private val TAG = "ejTouchService"
+
+    // This function is now called when we send an Intent to the service
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        when (intent?.action) {
+            ACTION_LOCK_SCREEN -> performGlobalAction(GLOBAL_ACTION_LOCK_SCREEN)
+            ACTION_POWER_DIALOG -> performGlobalAction(GLOBAL_ACTION_POWER_DIALOG)
+            ACTION_SCREENSHOT -> performGlobalAction(GLOBAL_ACTION_TAKE_SCREENSHOT)
+            // We will add more actions here later
+        }
+        return super.onStartCommand(intent, flags, startId)
+    }
+
+    override fun onServiceConnected() {
+        super.onServiceConnected()
+        Log.d(TAG, "Accessibility Service connected.")
+    }
+
+    override fun onAccessibilityEvent(event: AccessibilityEvent?) {
+        // Not needed for our use case
+    }
+
+    override fun onInterrupt() {
+        Log.d(TAG, "Accessibility Service interrupted.")
+    }
+}
+
+============================================================
+FILE: app\src\main\java\com\dev\ejtouch\FloatingService.kt
+============================================================
+package com.dev.ejtouch
+
+import android.annotation.SuppressLint
+import android.app.Service
+import android.content.Intent
+import android.graphics.PixelFormat
+import android.media.AudioManager
+import android.net.Uri
+import android.os.IBinder
+import android.provider.Settings
+import android.util.TypedValue
+import android.view.*
+import android.widget.ImageView
+import android.widget.Toast
+import kotlin.math.abs
+
+class FloatingService : Service() {
+
+    private lateinit var windowManager: WindowManager
+    private lateinit var floatingView: View
+    private lateinit var mainMenuView: View
+    private lateinit var quickActionsView: View
+
+    private lateinit var params: WindowManager.LayoutParams
+    private lateinit var menuParams: WindowManager.LayoutParams
+
+    private var isMainMenuVisible = false
+    private var isQuickActionsVisible = false
+
+
+    override fun onBind(intent: Intent?): IBinder? {
+        return null
+    }
+
+    private fun dpToPx(dp: Int): Int {
+        return TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_DIP,
+            dp.toFloat(),
+            resources.displayMetrics
+        ).toInt()
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    override fun onCreate() {
+        super.onCreate()
+
+        floatingView = LayoutInflater.from(this).inflate(R.layout.floating_layout, null)
+        windowManager = getSystemService(WINDOW_SERVICE) as WindowManager
+
+        params = WindowManager.LayoutParams(
+            WindowManager.LayoutParams.WRAP_CONTENT,
+            WindowManager.LayoutParams.WRAP_CONTENT,
+            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
+            PixelFormat.TRANSLUCENT
+        )
+        params.gravity = Gravity.TOP or Gravity.START
+        params.x = 0
+        params.y = 100
+        windowManager.addView(floatingView, params)
+
+        mainMenuView = LayoutInflater.from(this).inflate(R.layout.main_menu_layout, null)
+        quickActionsView = LayoutInflater.from(this).inflate(R.layout.quick_actions_layout, null)
+
+        menuParams = WindowManager.LayoutParams(
+            dpToPx(200),
+            dpToPx(200),
+            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
+            PixelFormat.TRANSLUCENT
+        )
+        menuParams.gravity = Gravity.CENTER
+
+        setupTouchListener()
+        setupMainMenuListeners()
+        setupQuickActionsListeners()
+    }
+
+    private fun setupTouchListener() {
+        val floatingIcon = floatingView.findViewById<ImageView>(R.id.floating_icon_image)
+        floatingIcon.setOnTouchListener(object : View.OnTouchListener {
+            private var initialX: Int = 0
+            private var initialY: Int = 0
+            private var initialTouchX: Float = 0f
+            private var initialTouchY: Float = 0f
+            private val CLICK_DRAG_TOLERANCE = 10f
+
+            override fun onTouch(v: View?, event: MotionEvent): Boolean {
+                when (event.action) {
+                    MotionEvent.ACTION_DOWN -> {
+                        initialX = params.x
+                        initialY = params.y
+                        initialTouchX = event.rawX
+                        initialTouchY = event.rawY
+                        return true
+                    }
+                    MotionEvent.ACTION_UP -> {
+                        val screenWidth = windowManager.defaultDisplay.width
+                        if (params.x > screenWidth / 2) {
+                            params.x = screenWidth
+                        } else {
+                            params.x = 0
+                        }
+                        windowManager.updateViewLayout(floatingView, params)
+
+                        val xDiff = event.rawX - initialTouchX
+                        val yDiff = event.rawY - initialTouchY
+                        if (abs(xDiff) < CLICK_DRAG_TOLERANCE && abs(yDiff) < CLICK_DRAG_TOLERANCE) {
+                            if (isMainMenuVisible || isQuickActionsVisible) {
+                                hideAllMenus()
+                            } else {
+                                showMainMenu()
+                            }
+                        }
+                        return true
+                    }
+                    MotionEvent.ACTION_MOVE -> {
+                        hideAllMenus()
+                        params.x = initialX + (event.rawX - initialTouchX).toInt()
+                        params.y = initialY + (event.rawY - initialTouchY).toInt()
+                        windowManager.updateViewLayout(floatingView, params)
+                        return true
+                    }
+                }
+                return false
+            }
+        })
+    }
+
+    private fun setupMainMenuListeners() {
+        val buttonLock = mainMenuView.findViewById<ImageView>(R.id.button_lock)
+        val buttonPowerOff = mainMenuView.findViewById<ImageView>(R.id.button_power_off)
+        val buttonRestart = mainMenuView.findViewById<ImageView>(R.id.button_restart)
+        val buttonVolumeUp = mainMenuView.findViewById<ImageView>(R.id.button_volume_up)
+        val buttonVolumeDown = mainMenuView.findViewById<ImageView>(R.id.button_volume_down)
+        val buttonQuickActions = mainMenuView.findViewById<ImageView>(R.id.button_quick_actions)
+
+        buttonLock.setOnClickListener { sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_LOCK_SCREEN); hideAllMenus() }
+        buttonPowerOff.setOnClickListener { sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_POWER_DIALOG); hideAllMenus() }
+        buttonRestart.setOnClickListener { sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_POWER_DIALOG); hideAllMenus() }
+        buttonVolumeUp.setOnClickListener { volumeUp() }
+        buttonVolumeDown.setOnClickListener { volumeDown() }
+        buttonQuickActions.setOnClickListener {
+            hideMainMenu()
+            showQuickActionsMenu()
+        }
+    }
+
+    private fun setupQuickActionsListeners() {
+        val buttonBack = quickActionsView.findViewById<ImageView>(R.id.button_back)
+        val buttonScreenshot = quickActionsView.findViewById<ImageView>(R.id.button_screenshot)
+        val buttonFlashlight = quickActionsView.findViewById<ImageView>(R.id.button_flashlight)
+        val buttonWifi = quickActionsView.findViewById<ImageView>(R.id.button_wifi)
+        val buttonBluetooth = quickActionsView.findViewById<ImageView>(R.id.button_bluetooth)
+        val buttonBrightness = quickActionsView.findViewById<ImageView>(R.id.button_brightness)
+
+        buttonBack.setOnClickListener {
+            hideQuickActionsMenu()
+            showMainMenu()
+        }
+        buttonScreenshot.setOnClickListener {
+            sendActionToAccessibilityService(ejTouchAccessibilityService.ACTION_SCREENSHOT)
+            hideAllMenus()
+        }
+        buttonFlashlight.setOnClickListener {
+            toggleFlashlight()
+            hideAllMenus()
+        }
+        buttonWifi.setOnClickListener {
+            openWifiSettingsPanel()
+            hideAllMenus()
+        }
+        buttonBluetooth.setOnClickListener {
+            openBluetoothSettings()
+            hideAllMenus()
+        }
+        buttonBrightness.setOnClickListener {
+            cycleBrightness()
+        }
+    }
+
+    private fun showMainMenu() {
+        try {
+            if (!isMainMenuVisible) {
+                menuParams.x = 0
+                menuParams.y = 0
+                windowManager.addView(mainMenuView, menuParams)
+                isMainMenuVisible = true
+            }
+        } catch (e: Exception) { e.printStackTrace() }
+    }
+
+    private fun hideMainMenu() {
+        try {
+            if (isMainMenuVisible) {
+                windowManager.removeView(mainMenuView)
+                isMainMenuVisible = false
+            }
+        } catch (e: Exception) { e.printStackTrace() }
+    }
+
+    private fun showQuickActionsMenu() {
+        try {
+            if (!isQuickActionsVisible) {
+                menuParams.x = 0
+                menuParams.y = 0
+                windowManager.addView(quickActionsView, menuParams)
+                isQuickActionsVisible = true
+            }
+        } catch (e: Exception) { e.printStackTrace() }
+    }
+
+    private fun hideQuickActionsMenu() {
+        try {
+            if (isQuickActionsVisible) {
+                windowManager.removeView(quickActionsView)
+                isQuickActionsVisible = false
+            }
+        } catch (e: Exception) { e.printStackTrace() }
+    }
+
+    private fun hideAllMenus() {
+        hideMainMenu()
+        hideQuickActionsMenu()
+    }
+
+    private fun sendActionToAccessibilityService(action: String) {
+        val intent = Intent(this, ejTouchAccessibilityService::class.java)
+        intent.action = action
+        startService(intent)
+    }
+
+    private fun volumeUp() {
+        val audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
+        audioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_RAISE, AudioManager.FLAG_SHOW_UI)
+        audioManager.adjustStreamVolume(AudioManager.STREAM_RING, AudioManager.ADJUST_RAISE, 0)
+    }
+
+    private fun volumeDown() {
+        val audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
+        audioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_LOWER, AudioManager.FLAG_SHOW_UI)
+        audioManager.adjustStreamVolume(AudioManager.STREAM_RING, AudioManager.ADJUST_LOWER, 0)
+    }
+
+    private fun toggleFlashlight() {
+        val cameraManager = getSystemService(CAMERA_SERVICE) as android.hardware.camera2.CameraManager
+        try {
+            val cameraId = cameraManager.cameraIdList[0]
+            val isFlashlightOn = floatingView.tag as? Boolean ?: false
+            cameraManager.setTorchMode(cameraId, !isFlashlightOn)
+            floatingView.tag = !isFlashlightOn
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    private fun openWifiSettingsPanel() {
+        val intent = Intent(Settings.Panel.ACTION_INTERNET_CONNECTIVITY)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        startActivity(intent)
+    }
+
+    private fun openBluetoothSettings() {
+        val intent = Intent(Settings.ACTION_BLUETOOTH_SETTINGS)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        startActivity(intent)
+    }
+
+    private fun cycleBrightness() {
+        if (!Settings.System.canWrite(applicationContext)) {
+            val intent = Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS)
+            intent.data = Uri.parse("package:$packageName")
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+            Toast.makeText(this, "Please grant permission to modify settings", Toast.LENGTH_LONG).show()
+            hideAllMenus()
+            return
+        }
+
+        val contentResolver = contentResolver
+        try {
+            val currentBrightness = Settings.System.getInt(contentResolver, Settings.System.SCREEN_BRIGHTNESS)
+            val newBrightness = when {
+                currentBrightness < 60 -> 150
+                currentBrightness < 200 -> 255
+                else -> 50
+            }
+            Settings.System.putInt(contentResolver, Settings.System.SCREEN_BRIGHTNESS, newBrightness)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        hideAllMenus()
+        if (::floatingView.isInitialized) {
+            windowManager.removeView(floatingView)
+        }
+    }
+}
+
+============================================================
+FILE: app\src\main\java\com\dev\ejtouch\MainActivity.kt
+============================================================
+package com.dev.ejtouch
+
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
+import android.provider.Settings
+import android.text.TextUtils
+import android.util.Log
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.materialswitch.MaterialSwitch
+
+class MainActivity : AppCompatActivity() {
+
+    private val TAG = "MainActivity"
+
+    // Launcher for the Overlay Permission result
+    private val overlayPermissionLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+        if (hasOverlayPermission()) {
+            Log.d(TAG, "Overlay permission granted. Now checking Accessibility permission.")
+            checkAccessibilityPermission() // The next step in our sequence
+        } else {
+            handlePermissionDenied("Overlay Permission")
+        }
+    }
+
+    // Launcher for the Accessibility Permission result
+    private val accessibilityPermissionLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+        if (isAccessibilityServiceEnabled()) {
+            Log.d(TAG, "Accessibility Service has been enabled by the user.")
+            Toast.makeText(this, "All permissions granted! Service starting.", Toast.LENGTH_SHORT).show()
+            startService(Intent(this, FloatingService::class.java))
+        } else {
+            handlePermissionDenied("Accessibility Service")
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val masterSwitch = findViewById<MaterialSwitch>(R.id.master_switch)
+        masterSwitch.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                Log.d(TAG, "Switch ON. Starting permission checks.")
+                checkOverlayPermission()
+            } else {
+                Log.d(TAG, "Switch OFF. Stopping service.")
+                stopService(Intent(this, FloatingService::class.java))
+            }
+        }
+    }
+
+    override fun onResume() {
+
+        super.onResume()
+        // When the user returns to the app, sync the switch state with the actual permissions
+        val masterSwitch = findViewById<MaterialSwitch>(R.id.master_switch)
+        masterSwitch.isChecked = false
+        masterSwitch.isChecked = hasOverlayPermission() && isAccessibilityServiceEnabled()
+    }
+
+    private fun checkOverlayPermission() {
+        if (hasOverlayPermission()) {
+            Log.d(TAG, "Overlay permission is already granted. Checking Accessibility next.")
+            checkAccessibilityPermission()
+        } else {
+            Log.d(TAG, "Overlay permission not granted. Requesting it.")
+            requestOverlayPermission()
+        }
+    }
+
+    private fun checkAccessibilityPermission() {
+        if (isAccessibilityServiceEnabled()) {
+            Log.d(TAG, "Accessibility Service is already enabled.")
+            Toast.makeText(this, "All permissions present. Service starting.", Toast.LENGTH_SHORT).show()
+            startService(Intent(this, FloatingService::class.java))
+        } else {
+            Log.d(TAG, "Accessibility Service not enabled. Requesting it.")
+            requestAccessibilityPermission()
+        }
+    }
+
+    private fun hasOverlayPermission(): Boolean {
+        return Settings.canDrawOverlays(this)
+    }
+
+    private fun isAccessibilityServiceEnabled(): Boolean {
+        val serviceId = "$packageName/${ejTouchAccessibilityService::class.java.canonicalName}"
+        val settingValue = Settings.Secure.getString(
+            contentResolver,
+            Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES
+        )
+        return settingValue?.let {
+            val splitter = TextUtils.SimpleStringSplitter(':')
+            splitter.setString(it)
+            while (splitter.hasNext()) {
+                if (splitter.next().equals(serviceId, ignoreCase = true)) {
+                    return@let true
+                }
+            }
+            false
+        } ?: false
+    }
+
+    private fun requestOverlayPermission() {
+        val intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:$packageName"))
+        overlayPermissionLauncher.launch(intent)
+    }
+
+    private fun requestAccessibilityPermission() {
+        val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+        Toast.makeText(this, "Please find 'ejTouch Service' and enable it.", Toast.LENGTH_LONG).show()
+        accessibilityPermissionLauncher.launch(intent)
+    }
+
+    private fun handlePermissionDenied(permissionName: String) {
+        Log.d(TAG, "$permissionName was NOT granted by the user.")
+        Toast.makeText(this, "$permissionName Denied. The service cannot start.", Toast.LENGTH_SHORT).show()
+        findViewById<MaterialSwitch>(R.id.master_switch).isChecked = false
+    }
+}
+
+============================================================
+FILE: app\src\main\res\drawable\ic_launcher_background.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M0,0h108v108h-108z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M9,0L9,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,0L19,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29,0L29,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,0L39,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M49,0L49,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M59,0L59,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M69,0L69,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M79,0L79,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M89,0L89,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M99,0L99,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,9L108,9"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,19L108,19"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,29L108,29"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,39L108,39"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,49L108,49"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,59L108,59"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,69L108,69"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,79L108,79"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,89L108,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,99L108,99"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,29L89,29"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,39L89,39"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,49L89,49"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,59L89,59"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,69L89,69"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,79L89,79"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29,19L29,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,19L39,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M49,19L49,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M59,19L59,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M69,19L69,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M79,19L79,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+</vector>
+
+
+============================================================
+FILE: app\src\main\res\drawable\ic_launcher_foreground.xml
+============================================================
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="85.84757"
+                android:endY="92.4963"
+                android:startX="42.9492"
+                android:startY="49.59793"
+                android:type="linear">
+                <item
+                    android:color="#44000000"
+                    android:offset="0.0" />
+                <item
+                    android:color="#00000000"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="nonZero"
+        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+</vector>
+
+============================================================
+FILE: app\src\main\res\drawable\menu_background.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="#80000000" />
+
+</shape>
+
+============================================================
+FILE: app\src\main\res\layout\activity_main.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="ejTouch"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/service_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Service is currently stopped"
+        android:textSize="16sp" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/master_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Enable Service" />
+
+</RelativeLayout>
+
+============================================================
+FILE: app\src\main\res\layout\floating_layout.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/floating_icon_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@android:drawable/ic_menu_compass"
+        android:contentDescription="ejTouch Floating Icon" />
+
+</RelativeLayout>
+
+============================================================
+FILE: app\src\main\res\layout\main_menu_layout.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_menu_container"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@drawable/menu_background">
+
+    <!-- Power Off -->
+    <ImageView
+        android:id="@+id/button_power_off"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Power Off"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_lock_power_off" />
+
+    <!-- Restart -->
+    <ImageView
+        android:id="@+id/button_restart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Restart"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <!-- Volume Up -->
+    <ImageView
+        android:id="@+id/button_volume_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Volume Up"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_input_add" />
+
+    <!-- Volume Down -->
+    <ImageView
+        android:id="@+id/button_volume_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Volume Down"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_media_previous" />
+
+    <!-- Screen Lock -->
+    <ImageView
+        android:id="@+id/button_lock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Lock Screen"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_lock_lock" />
+
+    <!-- NEW: Quick Actions Button (replaces Mute's position) -->
+    <ImageView
+        android:id="@+id/button_quick_actions"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Open Quick Actions"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_manage" />
+
+</RelativeLayout>
+
+============================================================
+FILE: app\src\main\res\layout\quick_actions_layout.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quick_actions_container"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@drawable/menu_background">
+
+    <!-- Screenshot -->
+    <ImageView
+        android:id="@+id/button_screenshot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Screenshot"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <!-- Flashlight -->
+    <ImageView
+        android:id="@+id/button_flashlight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Flashlight"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_search" /> <!-- Placeholder icon -->
+
+    <!-- WiFi -->
+    <ImageView
+        android:id="@+id/button_wifi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="WiFi Settings"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_send" /> <!-- Placeholder icon -->
+
+    <!-- Bluetooth -->
+    <ImageView
+        android:id="@+id/button_bluetooth"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Bluetooth Settings"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_share" /> <!-- Placeholder icon -->
+
+    <!-- Brightness -->
+    <ImageView
+        android:id="@+id/button_brightness"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Brightness"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_view" /> <!-- Placeholder icon -->
+
+    <!-- NEW: Back Button -->
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back to Main Menu"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+</RelativeLayout>
+
+============================================================
+FILE: app\src\main\res\mipmap-anydpi\ic_launcher.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>
+
+============================================================
+FILE: app\src\main\res\mipmap-anydpi\ic_launcher_round.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>
+
+============================================================
+FILE: app\src\main\res\values-night\themes.xml
+============================================================
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EjTouch" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>
+
+============================================================
+FILE: app\src\main\res\values\colors.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
+
+============================================================
+FILE: app\src\main\res\values\strings.xml
+============================================================
+<resources>
+    <string name="app_name">ejTouch</string>
+</resources>
+
+============================================================
+FILE: app\src\main\res\values\themes.xml
+============================================================
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EjTouch" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.EjTouch" parent="Base.Theme.EjTouch" />
+</resources>
+
+============================================================
+FILE: app\src\main\res\xml\accessibility_service_config.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityFlags="flagDefault"
+    android:canPerformGestures="false"
+    android:canRetrieveWindowContent="false"
+    android:notificationTimeout="100" />
+
+============================================================
+FILE: app\src\main\res\xml\backup_rules.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample backup rules file; uncomment and customize as necessary.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored for devices older than API 31
+   See https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+    <!--
+   <include domain="sharedpref" path="."/>
+   <exclude domain="sharedpref" path="device.xml"/>
+-->
+</full-backup-content>
+
+============================================================
+FILE: app\src\main\res\xml\data_extraction_rules.xml
+============================================================
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample data extraction rules file; uncomment and customize as necessary.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Use <include> and <exclude> to control what is backed up.
+        <include .../>
+        <exclude .../>
+        -->
+    </cloud-backup>
+    <!--
+    <device-transfer>
+        <include .../>
+        <exclude .../>
+    </device-transfer>
+    -->
+</data-extraction-rules>
+
+============================================================
+FILE: app\src\test\java\com\dev\ejtouch\ExampleUnitTest.kt
+============================================================
+package com.dev.ejtouch
+
+import org.junit.Test
+
+import org.junit.Assert.*
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+class ExampleUnitTest {
+    @Test
+    fun addition_isCorrect() {
+        assertEquals(4, 2 + 2)
+    }
+}
+
+============================================================
+FILE: gradle.properties
+============================================================
+# Project-wide Gradle settings.
+# IDE (e.g. Android Studio) users:
+# Gradle settings configured through the IDE *will override*
+# any settings specified in this file.
+# For more details on how to configure your build environment visit
+# http://www.gradle.org/docs/current/userguide/build_environment.html
+# Specifies the JVM arguments used for the daemon process.
+# The setting is particularly useful for tweaking memory settings.
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+# When configured, Gradle will run in incubating parallel mode.
+# This option should only be used with decoupled projects. For more details, visit
+# https://developer.android.com/r/tools/gradle-multi-project-decoupled-projects
+# org.gradle.parallel=true
+# AndroidX package structure to make it clearer which packages are bundled with the
+# Android operating system, and which are packaged with your app's APK
+# https://developer.android.com/topic/libraries/support-library/androidx-rn
+android.useAndroidX=true
+# Kotlin code style for this project: "official" or "obsolete":
+kotlin.code.style=official
+# Enables namespacing of each library's R class so that its R class includes only the
+# resources declared in the library itself and none from the library's dependencies,
+# thereby reducing the size of the R class for that library
+android.nonTransitiveRClass=true
+
+# Enable the Gradle Daemon to keep a background process alive, avoiding startup costs.
+org.gradle.daemon=true
+
+# Enable parallel execution to use all your CPU cores for building.
+org.gradle.parallel=true
+
+# Enable the build cache to reuse outputs from previous builds.
+org.gradle.caching=true
+
+# Enable configuration on demand to only configure the projects it needs to.
+org.gradle.configureondemand=true
+
+============================================================
+FILE: gradle\wrapper\gradle-wrapper.properties
+============================================================
+#Thu Aug 14 22:30:32 PST 2025
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.11.1-bin.zip
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+
+
+============================================================
+FILE: local.properties
+============================================================
+## This file is automatically generated by Android Studio.
+# Do not modify this file -- YOUR CHANGES WILL BE ERASED!
+#
+# This file should *NOT* be checked into Version Control Systems,
+# as it contains information specific to your local configuration.
+#
+# Location of the SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+sdk.dir=C\:\\Users\\user\\AppData\\Local\\Android\\Sdk
+
+============================================================
+FILE: README.md
+============================================================
+A start of a personalized Assistive touch like app for my dumbahhhh android phone xD
+
+
+================================================================================
+EXPORT COMPLETED - 27 files processed
+Generated: 2025-08-16 23:05:48
+================================================================================
