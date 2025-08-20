@@ -1,1 +1,1 @@
-A start of a personalized Assistive touch like app for my dumbahhhh android phone xD
+I will make sure I'll complete this project tomorrow (August 21, 2025)
